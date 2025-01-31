@@ -1,0 +1,71 @@
+---
+{
+  "title": "Organizations We Work With",
+  "orgs": [
+    {
+      "image": "org-logo-core.png"
+    },
+    {
+      "image": "org-logo-premier.png"
+    },
+    {
+      "image": "org-logo-northside.png"
+    },
+    {
+      "image": "org-logo-aylo.png"
+    },
+    {
+      "image": "org-logo-wellstar.png"
+    },
+    {
+      "image": "org-logo-vituity.png"
+    },
+    {
+      "image": "org-logo-st-francis.png"
+    },
+    {
+      "image": "org-logo-schumacher.png"
+    },
+    {
+      "image": "org-logo-piedmont.png"
+    },
+    {
+      "image": "org-logo-northside-heart.png"
+    },
+    {
+      "image": "org-logo-kaiser.png"
+    },
+    {
+      "image": "org-logo-envision.png"
+    },
+    {
+      "image": "org-logo-emory.png"
+    },
+    {
+      "image": "org-logo-atlanta.png"
+    },
+    {
+      "image": "org-logo-apollo.png"
+    },
+    {
+      "image": "org-logo-gwinnet.png"
+    }
+  ]
+}
+---
+<div class="int-tier pt-large pb-large p-horz-huge">
+  <div class="pam-container">
+    <p class="pam-text-center pb-small"><em><strong>We are proud to work with physicians from some of the best organizations in the nation as seen below. We work one-on-one with clients at all career stages from residency through retirement, and we also provide educational seminars to physician groups.</strong></em></p>
+    <hr class="h-1" />
+  </div>
+  <div class="pam-container pt-small">
+    <div class="pam-flex ai jc">
+      {{ range $i, $o := .page.orgs }}
+      <div class="pam-large-2 pam-columns">
+        <img src="{{ file $o.image }}" alt="" class="p-horz-small" />
+      </div>
+      {{ end }}
+    </div>
+    <p class="pam-footnote pam-text-center pt-small"><sup>*</sup>Financial Planning Offered through Ben, Daniel, Nolan, and Andrew's affiliation with Eagle Strategies LLC, A Registered Investment Adviser.</p>
+  </div>
+</div>

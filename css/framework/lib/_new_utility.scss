@@ -1,0 +1,89 @@
+.p-vert-huge{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.p-vert-large{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.p-vert-medium{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.p-vert-small{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.p-horz-huge{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.p-horz-large{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.p-horz-medium{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.p-horz-small{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.pt-huge{
+  padding-top: 100px;
+}
+.pb-huge{
+  padding-bottom: 100px;
+}
+.pl-huge{
+  padding-left: 100px;
+}
+.pr-huge{
+  padding-right: 100px;
+}
+.pt-large{
+  padding-top: 80px;
+}
+.pb-large{
+  padding-bottom: 80px;
+}
+.pl-large{
+  padding-left: 80px;
+}
+.pr-large{
+  padding-right: 80px;
+}
+.pt-medium{
+  padding-top: 50px;
+}
+.pb-medium{
+  padding-bottom: 50px;
+}
+.pl-medium{
+  padding-left: 50px;
+}
+.pr-medium{
+  padding-right: 50px;
+}
+.pt-small{
+  padding-top: 24px;
+}
+.pb-small{
+  padding-bottom: 24px;
+}
+.pl-small{
+  padding-left: 24px;
+}
+.pr-small{
+  padding-right: 24px;
+}
+.vr{
+  position: absolute;
+  left:0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 100%;
+  background: $secondary;
+}

@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Henry",
+  "headshot": "henry-headshot.jpg",
+  "name": "Henry McGee, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>, CLU<sup>&reg;</sup>",
+  "position": "Partner",
+  "bio": "<p>As long as I can remember, helping people plan has been an emphasis in how I was raised. My great-grandfather started this path that I am still on today, over 100 years ago. Upon graduating from Clemson University with a major in Finance and a minor in Investments, I immediately began working with a Fortune 100 financial services firm, and have done so now for over 20 years. 10 years ago, alongside my father, I started Financial Resources, LLC and more recently, partnered my firm with Generational Financial Partners, LLC. Along the way I obtained my CLU&reg;, ChFC&reg;, and CFP&reg;&nbsp;designations, allowing me to have a greater understanding of the comprehensive planning process and what it takes to make our client&#39;s plans and dreams successful.</p><p>I married my beautiful wife Lindsey in 2008, and together we have been blessed with 3 children, Brett (11), Henry (8), and Bo (5), a dog named Rambo and a cat named Millie! If I&#39;m not with a client, then I&#39;m either coaching on a basketball court, baseball diamond, or soccer field! In my free-time, I love running, triathlon, hunting, golf, or anything that has to do with being outside.</p><p>We are all limited to the same 24 hours in a day, and how we choose to use that time directs the path our lives and those of others will take. When we plan wisely, the path is ours to choose!</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

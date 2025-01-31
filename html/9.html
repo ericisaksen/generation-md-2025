@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Jeff",
+  "headshot": "jeff-headshot.jpg",
+  "name": "Jeff Hudson",
+  "position": "Partner",
+  "bio": "<p>With over 20 year&rsquo;s experience in financial planning, I work with passion and a high level of energy to help folks figure out how to achieve the ultimate success in their life&hellip;if people take the time and energy to work with a compassionate, qualified, and empathetic financial advisor, they will improve almost every aspect of their life, well beyond finances. I truly believe that a great financial and life planning experience will help people become better fathers, mothers, husbands, wives, and physicians. Prior to entering the financial services industry, I graduated with a BBA degree from the College of Business and Industry at Mississippi State University, where I played collegiate golf for the Bulldogs. When I&rsquo;m not in the office, I can be found:</p><ul>	<li>Traveling the world with my wife Libby, daughters: Ridley and Carter, and son: Mercer</li>	<li>Performing as an actor in local film productions</li>	<li>Playing golf or fishing with family, friends, and clients</li>	<li>Watching my kids compete in football, tennis, basketball, and baseball games</li>	<li>Volunteering with local charitable organization</li></ul>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

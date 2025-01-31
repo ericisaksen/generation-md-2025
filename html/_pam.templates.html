@@ -1,0 +1,217 @@
+<!-- BEGIN TEMPLATES -->
+<script data-pam-template-name="layout" type="application/x-pam-template">
+  <div class="pam-mobile-nav">
+    <ul>
+      <li><a class="pam-mobile-nav-close">Close</a></li>
+      <li><a href="index.cfm">Home</a></li>
+    </ul>
+    <%= render("nav") %>
+  </div>
+  <div class="pam-mobile-nav-toggle"><i class="lmg-fal lmg-fa-bars"></i></div>
+  <div class="pam-site-wrapper pam-sticky-wrapper">
+    <div class="pam-header p-horz-small">
+      <div class="pam-container">
+        <div class="pam-flex jc ai">
+          <div class="pam-large-3 pam-medium-6 pam-columns valign-middle logo-left">
+            <% if(exists('.pam-page-index')) { %><h1><% } %>
+              <a href="index.cfm"><img src="{{ file .site.logo }}" alt="{{ .site.title }}" /></a>
+            <% if(exists('.pam-page-index')) { %></h1><% } %>
+          </div>
+          <div class="pam-large-9 pam-medium-6 pam-columns valign-middle header-right">
+            <div class="pam-auto-nav pam-desktop-nav">
+              <%= render("nav") %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pam-sticky-content">
+      <div class="pam-page-content-container">
+        <% if (exists('.pam-page-interior')) { %>
+            <div class="title-container">
+              <div class="pam-flex ai">
+                <div class="pam-large-6 pam-columns">
+                  <% if (exists('#pageImage')) { %>
+                    <h6><%= moveFrom('#pageImage') %></h6>
+                  <% } %>
+                </div>
+                <div class="pam-large-6 pam-columns p-horz-large">
+                  <% if (exists('#preheadline')) { %>
+                    <h6><%= moveFrom('#preheadline') %></h6>
+                  <% } %>
+                  <h1><%= moveFrom('#emerald-page-title') %></h1>
+                  <% if (exists('#subheadline')) { %>
+                    <h2><%= moveFrom('#subheadline') %></h2>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+        <div class="pam-container pam-page-content">
+          <%= moveFrom("#emerald-page-content") %>
+        </div>
+      <% } else { %>
+      <%= moveFrom("#emerald-page-content") %>
+      <% } %>
+      </div>
+    </div>
+    <div class="pam-sticky-footer">
+      <div class="pam-sub-footer p-vert-huge themed-dark">
+        <div class="pam-container p-vert-huge">
+          <div class="pam-flex pam-text-center jc">
+            <div class="pam-columns pam-large-4 pam-large-order-2 pam-medium-6 pt-small pb-small">
+              <p><img style="width: 200px;" src="{{ file "gmd-footer-logo.png" }}" alt="{{ .site.title }}" /></p>
+            </div>
+          </div>
+          <div class="pam-flex pam-text-center jc">
+            <div class="pam-columns pam-large-4 pt-small pb-huge">
+              <p><a style="width: 250px;" class="pam-button" href=".21.htm">Let's Talk</a></p>
+            </div>
+            <div class="pam-columns pam-large-4 pt-small pb-huge">
+              <p><a style="width: 250px;" class="pam-button" href="#">Watch Webinar</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="disclosures block block_accordion block_accordion_base">
+          <div class="block__body">
+            <div class="block__control block__control_accordion" role="link" tabindex="0">
+              <div class="block block_rich-text block_rich-text_base">
+                <div class="block__body">
+                  <h5>Disclosure</h5>
+                </div>
+              </div>
+              <i class="close-disclosures lmg-fal lmg-fa-minus-circle"></i>
+            </div>
+            <div class="block__section_main">
+              <div class="block block_rich-text block_rich-text_disclosure block__child disclosures-container">
+                <div class="block__body">
+                  {{ partial "disclosures" }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block_pencil-banner block_pencil-banner_center block_pencil-banner_align-center footer-banner" id="f36wnm">
+          <div class="block__body" role="banner">
+            <div class="block__body-container">
+              <div class="block block_rich-text block_rich-text_base">
+                <div class="block__body">
+                  <p>For more information about NYLIFE Securities LLC and its investment professionals.</p>
+                </div>
+              </div>
+              <div class="block__body-container_button block block_button block_button_text block_button_icon-right">
+                <div class="block__body" data-site="[object Object]">
+                  <a href="https://brokercheck.finra.org/" target="_blank" role="button" tabindex="0" title="Click here" class="button">Click Here</a>
+                  <i class="lmg-fal lmg-fa-arrow-right" style="margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content-wrapper">
+          <div class="footer__content">
+            <div class="footer__top">
+              <div class="navbar">
+                <nav class="nav">
+                  <div class="nav-left">
+                    <figure class="brand">
+                      <a class="brand_link" href="/#"><img alt="" class="brand_image brand_image--large" src="{{ file .site.logo }}" /></a>
+                      <figcaption class="brand_text" style="">
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="nav-right">
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <%= render('nyl_nav') %>
+            <div>
+              <div class="copyright">
+                <p class="copyright-text">
+                  <span>
+                    <a class="" href="/copyright" rel="noopener noreferrer nofollow">Copyright 2023. New York Life Insurance Company. All Rights Reserved.</a>
+                  </span>
+                </p>
+                <p class="copyright-text">
+                  <span>
+                    <a href="https://www.newyorklife.com/about/privacy-policy" rel="noopener noreferrer nofollow" target="_blank">Privacy Policy</a>
+                  </span>
+                </p>
+                <p class="copyright-text">
+                  <span>
+                    NYLIFE Securities LLC, Member <a href="http://www.finra.org" rel="noopener noreferrer nofollow" target="_blank">FINRA</a>/<a href="https://www.sipc.org" rel="noopener noreferrer nofollow" target="_blank">SIPC</a>.
+                  </span>
+                </p>
+                <p class="copyright-text">
+                  <span>
+                    For additional information, visit <a href="https://www.newyorklife.com/assets/docs/pdfs/nyl-internet/nylifesecurities/customer-relationship-summary.pdf" rel="noopener noreferrer nofollow" target="_blank">Customer Relationship Summary.pdf</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</script>
+<script data-pam-template-name="nav" type="application/x-pam-template">
+  <ul>
+    {{ range $i, $n := .site.nav }}
+      <li><a{{ if $n.class }} class="{{ $n.class }}" {{end }}{{ if $n.url }} href="{{ $n.url }}" {{ end }}{{ if $n.blank }} target="_blank"{{ end}}><span>{{ $n.title }}</span></a>
+        {{ if $n.sub_nav }}
+        <div class="pam-sub-nav">
+          <ul>
+            {{ range $i2, $sn := $n.sub_nav }}
+              <li><a href="{{ $sn.url }}"{{ if $sn.blank }} target="_blank"{{ end}}>{{ $sn.title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</script>
+<script data-pam-template-name="nyl_nav" type="application/x-pam-template">
+  <nav>
+  <ul class="subnav" role="menu">
+    {{ range $i, $n := .site.nav }}
+      <li class="nav__item--container navbar_item{{ if $n.sub_nav }} navbar_item--dropdown{{ end }}">
+        <a class="navbar_link" {{ if $n.url }} href="{{ $n.url }}" {{ end }}{{ if $n.blank }} target="_blank"{{ end}}>
+          <div>
+            {{ if $n.sub_nav }}
+              {{ $n.title }}
+            {{ else }}
+              <span>{{ $n.title }}</span>
+            <div style="display:inline-flex;">
+              <i class="lmg-fal lmg-fa-chevron-right"><label>.</label></i>
+            </div>
+            {{ end }}
+          </div>
+        </a>
+        {{ if $n.sub_nav }}
+        <div class="pam-sub-nav">
+          <ul>
+            {{ range $i2, $sn := $n.sub_nav }}
+              <li class="nav__item--container navbar_item">
+                <a class="navbar_link" href="{{ $sn.url }}"{{ if $sn.blank }} target="_blank"{{ end}}>
+                  <div>
+                    {{ $sn.title }}
+                  </div>
+                  <div style="display:flex;">
+                    <i class="lmg-fal lmg-fa-chevron-right"><label>.</label></i>
+                  </div>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+  </nav>
+</script>
+<!-- END TEMPLATES -->

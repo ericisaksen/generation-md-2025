@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Daniel",
+  "headshot": "daniel-headshot.jpg",
+  "name": "Daniel Burke, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>",
+  "position": "Partner",
+  "bio": "<p>In 2009, I completed my undergraduate degree in finance with my sights set on working in commercial real estate. The financial crisis of 2008/2009, however, had other plans for me and I was forced into exploring other career options.&nbsp; I decided to pursue the financial services industry directly out of college and am grateful I made that choice.&nbsp; After working with a Fortune 100 company for a few years, I was asked to become a Partner in their local office handling the development and management of new advisers.&nbsp; I remained in that role until August 2014, when I decided to move back into personal advising.</p><p>My specialty quickly became strategic planning with physicians around retirement and investments.&nbsp; My practice has grown rapidly and we continue to work with medical providers throughout the country. &nbsp;I have an amazing wife Liz, who is a Doctor of Nursing Practice from Vanderbilt University specializing in Psychiatry at our local VA Hospital.&nbsp; We had our son Hudson in April 2018 and he has only changed our lives for the better.&nbsp; Most of my free time is spent with family. If I can squeeze out some personal time, however, I enjoy local car shows and driving events in the Middle Tennessee area.</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

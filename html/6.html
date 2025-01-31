@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Nolan",
+  "headshot": "nolan-headshot.jpg",
+  "name": "Nolan Pendleton, CFP<sup>&reg;</sup>, MBA",
+  "position": "Partner",
+  "bio": "<p>I have enjoyed jigsaw puzzles for as long as I can remember. As a child, I would spend hours at a time working on them with my father. It&rsquo;s something that we enjoyed doing together, but I know that my puzzle building technique drove him a bit crazy. I would simply begin wherever my eyes were drawn, which was usually in the middle where the more attention-grabbing parts of the pictures were. Each time my Dad would try to explain to me that beginning with the edges was not only an easier place to start, but that is also made a simpler task of ordering and positioning everything in between. He just couldn&rsquo;t understand the lack of logic and efficiency.</p><p>What do jigsaw puzzles have to do with financial planning? Everything.</p><p>Prior to becoming a financial planner, I was in banking for nearly a decade. I cut my teeth making calls for a stockbroker and learning about the world of investments. I transitioned to mortgage lending and later to commercial lending. As a lender, my job was to have a thorough understanding of the customer&rsquo;s finances to ensure they would have the means to repay the loan. In reviewing their finances, I found the overwhelming majority of people&rsquo;s financial picture had no semblance of order. They had numerous assets and multiple products (and even advisors) but no logical or efficient plan that coordinated everything. They had started with the middle puzzle pieces. I found that the process of ordering their finances and educating on them on how to best do so was what I was truly passionate about. My father&rsquo;s lesson had finally taken hold; I was starting with the edge pieces.</p><p>I left banking in 2012 to become a financial advisor. In 2015, I earned my CFP&reg; designation and became a partner at Hudson Pendleton Financial Group. Additionally, in 2018, I became a partner at Generational Financial Partners, LLC (GenFi). I am in the fortunate and trusted position of educating and helping people in all aspects of their financial lives. The magnitude of that responsibility is never lost on me. Combining the work of crafting and implementing a comprehensive plan, the relationships I develop with my clients and the sense of accomplishment we share as their goals are realized is what makes me love my job.</p><p>What does the picture on your puzzle box look like? Whether you started in the middle or already have your edges in place, I would love to help you piece together your financial picture.</p><p>CA Insurance license #OM66322</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

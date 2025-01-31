@@ -1,0 +1,52 @@
+---
+{
+  "title": "Our Partners",
+  "preheadline": "Insert a Pre-Headline",
+  "subheadline": "Insert a Subheadline"
+}
+---
+<div id="pageImage">
+  <img src="{{ file "154874192.jpg" }}" alt="" />
+</div>
+<div id="preheadline">
+  {{ .page.preheadline }}
+</div>
+<div id="subheadline">
+  {{ .page.subheadline }}
+</div>
+<div class="int-tier p-vert-large">
+  <div class="pam-container pt-small">
+    <div class="pam-flex jc">
+      {{ range $i, $t := .site.team }}
+        <div class="pam-medium-6 pam-columns p-vert-medium custom-team-headshot">
+          <div class="pam-container pam-flex ai">
+            <div class="pam-large-4 pam-columns pam-text-center">
+              <div class="image-container">
+                <img src="{{ if $t.headshot }}{{ file $t.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ $t.name }}">
+              </div>
+            </div>
+            <div class="pam-large-8 pam-columns p-horz-small">
+              <div class="content-container custom-team-name-details pb-small pr-large">
+                <h3 class="team-name">{{ if $t.name }}{{ $t.name }}{{ else }}Insert Name{{ end }}</h3>
+                <h4 class="team-positon">{{ if $t.position }}{{ $t.position }}{{ else }}Insert Position{{ end }}</h4>
+              </div>
+              <hr class="w-100" />
+              <div class="contnet-container">
+                {{ if $t.specialty }}
+                  <ul>
+                    {{ range $s := $t.specialty }}
+                      <li>{{ $s.title }}</li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </div>
+              <div class="button-container">
+                <p><a class="pam-button" href="{{ $t.page }}">Read Bio</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+---
+{
+  "title": "Our Core Services",
+  "services": [
+    {
+      "title": "Student Loan Repayment Plans",
+      "icon": "graduation-cap"
+    },
+    {
+      "title": "Portfolio Checkups & Optimization",
+      "icon": "chart-line"
+    },
+    {
+      "title": "Short and Long Term Disability Insurance",
+      "icon": "wheelchair"
+    },
+    {
+      "title": "Asset Protection & Life Insurance",
+      "icon": "shield-alt"
+    },
+    {
+      "title": "Wealth Management",
+      "icon": "coins"
+    },
+    {
+      "title": "Retirement & Estate Planning",
+      "icon": "umbrella-beach"
+    },
+    {
+      "title": "Tax Minimization Strategies",
+      "icon": "file-invoice-dollar"
+    },
+    {
+      "title": "Charitable Gifting Strategies",
+      "icon": "hands-helping"
+    },
+    {
+      "title": "Higher Education Planning",
+      "icon": "book"
+    },
+    {
+      "title": "Executive & Employee Benefits",
+      "icon": "users"
+    },
+    {
+      "title": "Budget Development",
+      "icon": "calculator"
+    },
+    {
+      "title": "Major Purchase Decisions",
+      "icon": "shopping-cart"
+    },
+    {
+      "title": "Social Security Strategies",
+      "icon": "id-card"
+    },
+    {
+      "title": "Debt<br/> Management",
+      "icon": "balance-scale"
+    },
+    {
+      "title": "Business Succession",
+      "icon": "briefcase"
+    }
+  ]
+}
+---
+<div class="int-tier pt-large pb-large p-horz-huge">
+  <div class="pam-container pam-text-center">
+    <p>Here at Generational Financial Partners, we work with physicians across the country at all career stages, from residency to retirement and everything in between. Some doctors only need our help with individual services, like making sure they have the right disability policy in place, and others want more comprehensive help to make sure they’re making all the right choices to get out of debt, build up their wealth, and protect their assets.</p>
+  <div class="pam-container pt-small">
+    <h3 class="pb-small pam-text-center">Some of the key services we provide include:</h3>
+    <hr class="h-4 w-100 center" />
+    <div class="pam-flex jc pt-small pam-text-center services-grid">
+      {{ range $i, $s := .page.services }}
+      <div class="pam-large-3 pam-columns p-horz-large p-vert-small">
+        <p><i class="lmg-fal lmg-fa-{{ $s.icon }}"><label>.</label></i></p>
+        <p>{{ $s.title }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

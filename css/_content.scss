@@ -1,0 +1,203 @@
+.title-container,
+.hero{
+  position: relative;
+  width: 100%;
+  color: #000;
+  background: file-url('97672545.jpg') no-repeat center center / cover;
+  overflow: hidden;
+  // set the h2 variables
+  --_core__heading_line-height--h2: 92px;
+  --_core__heading_font-size--h2: 86px;
+  --_core__heading_color--h6: $secondary;
+  --_core_heading_font-weight--h6: 900;
+
+  // set the paragraph variables
+  --_core__paragraph_font-size: 24px;
+  .overlay-text{
+    position: relative;
+    z-index: 102;
+    text-align: center;
+    p{
+      font-size: var(--_core__paragraph_font-size);
+      margin: .5rem 0 0;
+    }
+    h2{
+      color: #000;
+      span{
+        display: block;
+      }
+    }
+  }
+}
+.title-container{
+  --_core__heading_font-size--h2: 56px;
+}
+form{
+  label{
+    display: block;
+  }
+  input{
+    height: 55px;
+    width: 100%;
+  }
+}
+.pam-tier-bg{
+  text-align: center;
+  color: #fff;
+  background: file-url('194891600_lel.jpg') no-repeat center center / cover;
+  position: relative;
+  h2{
+    color: #fff;
+  }
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, .5);
+  }
+  label{
+    display: none;
+  }
+  .pam-columns{
+    position: relative;
+    color: #fff;
+  }
+}
+ul.sm-list{
+  margin: 1em 0 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    margin: 0 5px;
+    > a{
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background: $primary;
+      text-decoration: none;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      transition: all .5s;
+      &:hover{
+        opacity: .6;
+      }
+      &.lmg-fa-facebook-f{
+        background: $facebook;
+      }
+      &.lmg-fa-linkedin-in{
+        background: $linkedin;
+      }
+      &.lmg-fa-x-twitter{
+        background: $x-twitter;
+      }
+    }
+  }
+}
+.services-grid{
+  i{
+    color: $secondary;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid $secondary;
+    border-radius: 100%;
+  }
+  .pam-columns{
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 1px;
+      height: 60%;
+      background: $secondary;
+      transform: translateY(-50%);
+    }
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      height: 1px;
+      background: $secondary;
+      transform: translateX(-50%);
+    }
+    // every fifth column starting at 1
+    &:nth-child(4n+1){
+      &::before{
+        display: none;
+      }
+    }
+    // last child and the two before it
+  }
+}
+hr{
+  border: none;
+  border-bottom: 2px solid var(--core__color_secondary);
+  @for $i from 1 through 300{
+    &.w-#{$i}{
+      width: #{$i}px;
+      margin: 0;
+      &.center{
+        margin: 0 auto;
+      }
+    }
+  }
+  @for $i from 1 through 10{
+    &.h-#{$i}{
+      border-bottom: #{$i}px solid var(--core__color_secondary);
+      margin: 0;
+      &.center{
+        margin: 0 auto;
+      }
+
+    }
+  }
+}
+.custom-team-name-details{
+  --_core__heading_font-size--h3: 32px;
+}
+.custom-team-contact-details{
+  --_core__paragraph_font-size: 16px;
+}
+.custom-expertise-photo-grid,
+.custom-commitment-grid{
+  --_core__heading_font-size--h3: 28px;
+}
+.custom-expertise-photo-grid{
+  --_core__heading_margin: 28px;
+  h2{
+    margin-bottom: 0;
+  }
+}
+.custom-services-grid{
+  --_core__heading_font-size--h3: 20px;
+}
+.themed-dark{
+  background: $primary;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+  --_core__font_color_primary: #fff;
+  --_core__heading_color: #fff;
+  --_core__heading_color--h2: #fff;
+  --_core__heading_color--h3: #fff;
+  --_core__heading_color--h4: #fff;
+  --_core__heading_color--h5: #fff;
+  --_core__heading_color--h6: #fff;
+}

@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Rachel",
+  "headshot": "rachel-headshot.jpg",
+  "name": "Rachel Wilder, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>",
+  "position": "Partner",
+  "bio": "<p>In 1999 I graduated from the University of Georgia with a bachelor&rsquo;s in Banking and Finance, and my love for helping people immediately led me to the financial service industry. I immediately started with First Investors Corporation as a financial service representative where I built an expertise in retirement planning.</p><p>After six years I decided it was time to open my own practice and help couples, individuals, and business owners with comprehensive financial planning1. At that time I opened Wilder Wealth Strategies LLC. And most recently in 2023, I partnered with Generational Financial Partners LLC.</p><p>My passion for helping clients can be seen in my dedication to education. Over the years of continuing to take educational classes, I have acquired my CFP&reg;&nbsp;and ChFC&reg;.</p><p>I have an amazing husband, Scott, who works in medical devices for Medtronic. We have been married for 23 years, and we have two sons, Grant at Johns Creek High School and Parker at Autry Mill Middle School. When I&rsquo;m not helping my clients meet their financial goals, I&rsquo;m cheering on my two sons on the sidelines, rooting for the University of Georgia, traveling to various National Parks and exploring the world.</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

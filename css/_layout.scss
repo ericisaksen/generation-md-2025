@@ -1,0 +1,108 @@
+.pam-sub-footer{
+  .pam-button{
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover{
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+.pam-header {
+  padding: 20px 0;
+  max-width: 100%;
+  background: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1099;
+  .pam-container{
+    max-width: 100%;
+  }
+  .logo-left{
+    img{
+      width: 345px;
+      max-width: 100%;
+      transition: all .5s;
+      line-height: 1;
+    }
+    h1{
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+  }
+  .header-right{
+    .cl-container{
+      margin-right: 1rem;
+      a.button{
+        text-transform: uppercase;
+      }
+      .pam-hover-drop-down{
+        .pam-drop-down{
+          ul{
+            right: 0;
+            font-size: .85rem;
+          }
+        }
+      }
+    }
+  }
+}
+.block_pencil-banner .block {
+  width: auto
+}
+.block_pencil-banner .block__body-container {
+  justify-content: inherit
+}
+.block_pencil-banner .block__body {
+  align-items: center;
+  background-color: var(--_core__pencil-banner_background);
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+.block_pencil-banner .block__body-container {
+  --_core__paragraph_color: var(--_core__pencil-banner_color);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  width: 100%
+}
+.block_pencil-banner .block__body-container_button .block__body {
+  margin: 0
+}
+
+.block_pencil-banner .block__body-container_button .block__body .button {
+  height: auto;
+  padding: 0
+}
+.block_pencil-banner .block__body-container_button .block__body span {
+  font-size: var(--_core__pencil-banner-button_font-size)
+}
+.footer__content-wrapper{
+  background: $primary;
+}
+.block__icon_group i{
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  text-decoration: none;
+  color: $primary;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all .5s;
+}
+.disclosure-text p{
+  font-size: 14px !important;
+  a{
+    color: $primary !important;
+    &:hover{
+      text-decoration: underline !important;
+    }
+  }
+}

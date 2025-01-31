@@ -1,0 +1,249 @@
+{
+	"Title": "Generational Financial Partners",
+	"Name": "generation-md-2025",
+	"Password": "1efe4sa",
+	"Emerald": {},
+	"Globals": {
+		"dba": "Generational Financial Partners",
+		"addresses": [
+			{
+				"title": "",
+				"address_line_1": "6700 Main St",
+				"address_line_2": "",
+				"city": "Buffalo",
+				"state": "NY",
+				"zip": "14221",
+				"phone": "",
+				"emails": [
+					{
+						"email": ""
+					}
+				]
+			}
+		],
+		"phone": "",
+		"email": "",
+		"fax": "",
+		"footer_logo": "gmd-logo.png",
+		"logo": "gmd-logo.png",
+		"logo2": "gmd-logo.png",
+		"social": [
+			{
+				"icon": "facebook-f",
+				"link": "#"
+			},
+			{
+				"icon": "x-twitter",
+				"link": "#"
+			},
+			{
+				"icon": "linkedin-in",
+				"link": "#"
+			}
+		],
+		"nav": [
+			{
+				"sub_nav": [
+					{
+						"title": "Why Physicians Choose Us",
+						"url": "#"
+					},
+					{
+						"title": "The H.E.R.O. Strategy™",
+						"url": "#"
+					},
+					{
+						"title": "Organizations We Work With",
+						"url": "#"
+					}
+				],
+				"title": "About Us"
+			},
+			{
+				"title": "Our Partners",
+				"url": ".1.htm"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Our Core Services",
+						"url": ".13.htm"
+					},
+					{
+						"title": "Independent Contractor Physicians",
+						"url": ".14.htm"
+					},
+					{
+						"title": "Disability Insurance",
+						"url": ".15.htm"
+					}
+				],
+				"title": "How We Help"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Our Blog",
+						"url": ".16.htm"
+					},
+					{
+						"title": "GenFi TV",
+						"url": ".17.htm"
+					},
+					{
+						"title": "The Myth of the Rich Doctor",
+						"url": ".18.htm"
+					},
+					{
+						"title": "WISE Doctors Video Series™",
+						"url": ".19.htm"
+					}
+				],
+				"title": "GenFi Insights"
+			},
+			{
+				"title": "Let’s Talk",
+				"url": ".21.htm",
+				"class": "pam-button"
+			}
+		],
+		"team": [
+			{
+				"page": ".5.htm",
+				"headshot": "ben-headshot.png",
+				"name": "Benjamin Yin, MBA, ChFC<sup>&reg;</sup>, RICP<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".6.htm",
+				"headshot": "nolan-headshot.jpg",
+				"name": "Nolan Pendleton, CFP<sup>&reg;</sup>, MBA",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".7.htm",
+				"headshot": "daniel-headshot.jpg",
+				"name": "Daniel Burke, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".8.htm",
+				"headshot": "wesley-headshot.jpg",
+				"name": "Wesley Brugh, RICP<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".9.htm",
+				"headshot": "jeff-headshot.jpg",
+				"name": "Jeff Hudson",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".10.tm",
+				"headshot": "henry-headshot.jpg",
+				"name": "Henry McGee, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>, CLU<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".11.htm",
+				"headshot": "matthew-headshot.jpg",
+				"name": "Matthew Pisera, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>, CLU<sup>&reg;</sup>, RICP<sup>&reg;</sup>, CLTC<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			},
+			{
+				"page": ".12.htm",
+				"headshot": "rachel-headshot.jpg",
+				"name": "Rachel Wilder, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>",
+				"position": "Partner",
+				"specialty": [
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					},
+					{
+						"title": "Insert Specialty"
+					}
+				]
+			}
+		]
+	}
+}

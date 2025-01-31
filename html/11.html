@@ -1,0 +1,45 @@
+---
+{
+  "title": "Meet Matthew",
+  "page": ".11.htm",
+  "headshot": "matthew-headshot.jpg",
+  "name": "Matthew Pisera, CFP<sup>&reg;</sup>, ChFC<sup>&reg;</sup>, CLU<sup>&reg;</sup>, RICP<sup>&reg;</sup>, CLTC<sup>&reg;</sup>",
+  "position": "Partner",
+  "bio": "<p>What&rsquo;s your superpower? For some it&rsquo;s strength, speed, or smarts. For me, it&rsquo;s endurance. Endurance is the power of withstanding difficult processes or situations without giving way. This is a trait that I take pride in. For all the times I can&rsquo;t say that I&rsquo;m the most naturally talented person in the room I can be confident that I&rsquo;ll be able work as hard or harder than the person to my left and right and be there at the end.</p><p>I love working with clients who not only know what their superpower is but seek to use it in the greatest way possible.</p><p>As a Financial Adviser and Certified Financial Planner&reg; my role is to develop, implement, and monitor your financial plans so that you can stay focused on developing your professional skills, enjoying friends and family, and creating lasting impacts on those which you serve. By working together, you will be able to maximize your number one resource: time.</p><p>I graduated from James Madison University with a degree in Finance. Within a few weeks I began my career in financial services with a Fortune 100 Company. After working as an agent for two years I was promoted to the role of Product Consultant in the Long-Term Care and Retirement Planning space becoming the youngest Regional Product Consultant in the company&rsquo;s 172-year history. This presented an incredible opportunity to travel across the country and work with hundreds of advisors and thousands of clients.</p><p>Outside of the office, I&rsquo;m a fitness enthusiast, particularly swimming and running. I&rsquo;m a big Disney fan and enjoy visiting the parks with family and friends. I like reading about health, wellness, and philosophy. I grew up in Westchester, New York and made my way down to the sunshine state. I currently live in Orlando, Florida with my better half, Donna, and our cat, Xena the Warrior Princess. We frequently spend time in the New York and Washington, DC areas as well.</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

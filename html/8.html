@@ -1,0 +1,44 @@
+---
+{
+  "title": "Meet Wesley",
+  "headshot": "wesley-headshot.jpg",
+  "name": "Wesley Brugh, RICP<sup>&reg;</sup>",
+  "position": "Partner",
+  "bio": "<p>Through a comprehensive and thought out process, I strive to understand my clients&#39; current situation, determine where they would like to be in the years to come, and then map out a plan to help them get there. I recognize that not all clients are alike, so I enjoy taking a custom-tailored approach to planning for each person. Whether my clients are balancing their work and home life or managing their &ldquo;every day is a Saturday&rdquo; retirement schedule, I know they stay extremely busy. Sit back and enjoy doing what you do best and leave the financial matters to me. I&rsquo;d be honored to be your personal &ldquo;CFO&rdquo;.</p><p>Before joining the finance world, I graduated from Old Dominion University&#39;s Darden College of Education, where I majored in Career and Technical Education with a concentration in Marketing and Finance. After graduating in 2013 and before becoming a Financial Advisor in 2014, I had a brief stent in education at Hidden Valley High School in Roanoke, VA where I also coached basketball for five years. I&rsquo;m a firm believer in taking an educative based approach when working with clients and my education background allows me to effectively communicate the ideas and concepts associated with financial planning.</p><p>I&rsquo;ve been married to Jordan since 2012 and have two beautiful children (Parker: 8, Beckett: 6). We have two adopted rescue dogs, Kaymen and Keera. When I&rsquo;m not working, I enjoy spending time with my family, playing sports, or coaching my children in whatever they are playing at the time.</p>"
+}
+---
+<div class="int-tier pt-large pb-huge">
+  <div class="pam-container pt-medium">
+    <div class="pam-flex team-container">
+      <div class="pam-medium-3 pam-columns valign-top pam-text-center">
+        <div class="pam-container">
+          <div class="image-container pt-small">
+            <img src="{{ if .page.headshot }}{{ file .page.headshot }}{{ else }}https://via.placeholder.com/250x300{{ end }}" alt="Photo of {{ .page.name }}">
+          </div>
+        </div>
+      </div>
+      <div class="pam-medium-9 pam-columns valign-top bio pb-medium p-horz-medium">
+        <div class="pam-container pt-small">
+          <div class="content-container">
+            <h2 class="team-name">{{ if .page.name }}{{ .page.name }}{{ else }}Insert Name{{ end }}</h2>
+            <h3 class="team-positon">{{ if .page.position }}{{ .page.position }}{{ else }}Insert Position{{ end }}</h3>
+            {{ if .page.bio }}
+              {{ .page.bio }}
+            {{ end }}
+            {{ if .page.bio_sections }}
+              <div data-expander=".pam-section" data-expander-title="h4">
+                {{ range $i, $s := .page.bio_sections }}
+                  <div class="pam-section pt-small pb-small">
+                    <h4>{{ $s.title }}</h4>
+                    {{ $s.content }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end}}
+            <p class="pt-small"><a class="pam-button" href=".1.htm"><i class="lmg-fal lmg-fa-long-arrow-left"><label>.</label></i> Back to Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
