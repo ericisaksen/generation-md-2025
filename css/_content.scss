@@ -7,6 +7,8 @@
   overflow: hidden;
   // set the h2 variables
   --_core__heading_line-height--h2: 92px;
+  --_core__heading_line-height--h1: 82px;
+  --_core__heading_font-size--h1: 76px;
   --_core__heading_font-size--h2: 86px;
   --_core__heading_color--h6: $secondary;
   --_core_heading_font-weight--h6: 900;
@@ -32,6 +34,18 @@
 .title-container{
   --_core__heading_font-size--h2: 56px;
 }
+.pam-page-interior{
+  --_core__heading_font-size--h2: 42px;
+  --_core__heading_line-height--h2: 62px;
+}
+.int-tier{
+  --_core__heading_font-size--h1: 56px;
+  --_core__heading_line-height--h1: 72px;
+}
+.pam-page-17 .title-container,
+.pam-page-5 .title-container{
+  display: none;
+}
 form{
   label{
     display: block;
@@ -44,8 +58,11 @@ form{
 .pam-tier-bg{
   text-align: center;
   color: #fff;
-  background: file-url('194891600_lel.jpg') no-repeat center center / cover;
+  background: file-url('194891600_lel.png') no-repeat center center / cover;
   position: relative;
+  i{
+    font-size: 3rem;
+  }
   h2{
     color: #fff;
   }
