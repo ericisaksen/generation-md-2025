@@ -1,12 +1,52 @@
 ---
 {
-  "title": "Disability Insurance"
+  "title": "Wealth Management for Physicians",
+  "preheadline": "Insert a Pre-Headline",
+  "subheadline": "Insert a Subheadline",
+  "services": [
+    {
+      "title": "Tax Diversification",
+      "content": "<p>Tax diversification is a crucial strategy for physicians looking to optimize long-term financial health and maximize wealth. This approach involves spreading investments across three distinct \"buckets\": tax-deferred accounts, taxable accounts, and tax-free accounts.</p><p>By diversifying, you can reduce your tax liability and increase financial flexibility, ensuring you have options to manage income and withdrawals efficiently, regardless of future tax environments. For example, drawing from tax-free sources like Roth IRAs during high-tax years or from capital gains-taxed accounts when those rates are favorable can significantly impact your after-tax income. At Generational Financial Partners, we guide you through the best tax diversification strategies tailored to your unique financial situation and goals.</p>"
+    },
+    {
+      "title": "Portfolio Checkups and Optimization",
+      "content": "<p>Portfolio checkups and optimization are crucial for physicians to maintain financial health and achieve long-term goals. Regular reviews allow you to assess performance, rebalance assets, and adjust for changing market conditions or personal circumstances. A well-diversified portfolio includes a mix of equities, bonds, real estate, and possibly commodities, tailored to your risk tolerance and time horizon.</p><p>Our team at Generational Financial Partners conducts thorough portfolio reviews, making necessary adjustments to ensure your investments remain balanced and geared toward growth. This proactive approach helps you stay on track, adapt to market changes, and maximize your wealth over time.</p>"
+    },
+    {
+      "title": "Tax Minimization Strategies",
+      "content": "<p>High incomes often come with high tax burdens, but strategic planning can help you keep more of what you earn. Our tax minimization strategies for physicians focus on deductions, credits, and investment choices that reduce taxable income. We maximize contributions to tax-advantaged retirement accounts like 401(k)s, 403(b)s, and 457 plans and explore options such as traditional IRAs and backdoor Roth IRAs.</p><p>Additionally, tax-loss harvesting in taxable accounts can offset thousands in ordinary income annually. For those with practices, employing children in legitimate roles can shift income to lower tax brackets and potentially fund their Roth IRAs. Exploring business structures like trusts for income distribution can also offer advantages. Our goal is to enhance your after-tax income and accelerate your wealth-building efforts, all while ensuring compliance with tax regulations.</p>"
+    },
+    {
+      "title": "Investment Planning",
+      "content": "<p>Effective investment planning is crucial for long-term wealth accumulation, especially for physicians. Our approach tailors investment plans to your career stage, risk tolerance, and financial objectives.</p><p>We prioritize maximizing contributions to tax-advantaged retirement accounts like 401(k)s, 403(b)s, and IRAs, while also considering taxable accounts for additional savings. A diversified portfolio, including stocks, bonds, and alternative investments, is adjusted based on your risk tolerance and time horizon. Regular reviews and rebalancing ensure your portfolio adapts to market changes and evolving financial goals, supporting your journey to financial independence.</p>"
+    }
+  ]
 }
 ---
+<div id="pageImage">
+  <img src="{{ file "154873121.png" }}" alt="" >
+</div>
+<div id="preheadline">
+  {{ .page.preheadline }}
+</div>
+<div id="subheadline">
+  {{ .page.subheadline }}
+</div>
 <div class="int-tier pt-large pb-large p-horz-huge">
   <div class="pam-container">
-    <p>Proident in nostrud non fugiat veniam proident in ea consectetur irure deserunt. Ipsum reprehenderit culpa sit pariatur eiusmod occaecat ex. Officia Lorem laborum laborum nisi aute velit enim exercitation esse enim ea. Est minim sunt eiusmod mollit. Esse laborum et laboris reprehenderit consectetur veniam incididunt. Dolor aliqua sunt laboris nulla. Anim laboris irure nulla nostrud voluptate.</p>
-    <p>Ea consequat sunt mollit pariatur culpa sunt est exercitation sit. Irure consectetur qui voluptate ea ullamco amet dolor consequat nulla. Cupidatat sit officia ullamco quis nulla qui Lorem nisi pariatur.</p>
-    <p>Elit excepteur consequat non officia nulla quis do elit. Sint eiusmod commodo officia id culpa sit ad consectetur id ad excepteur. Mollit nisi ullamco ea anim sit laboris mollit irure. Nulla sit veniam ea qui et. Sit proident officia esse veniam. Sit velit elit aliquip Lorem eu sunt sint consectetur exercitation laboris ad qui do minim. Laborum est do deserunt dolore sit. Deserunt in officia tempor culpa. In sunt magna fugiat in pariatur velit eu incididunt ipsum elit proident. Pariatur aliqua reprehenderit et ea elit veniam consequat esse reprehenderit id sint.</p>
+    <p>Long-term financial planning is strategizing for a marathon, not a sprint. As a physician, you need a solid strategy to pace yourself, maintain endurance, and ensure a strong finish when it's time to pass the baton to your family or loved ones.</p>
+
+    <p>At Generational Financial Partners, we understand the unique hurdles you face and offer specialized services to help you reach your financial goals. Here’s how we can help you run the distance with your long-term planning and succession needs.</p>
+  </div>
+  <div data-expander=".pam-section" data-expander-title="h3">
+    {{ range $i, $s := .page.services }}
+      <div class="pam-section pt-small pb-small">
+        <h3>{{ $s.title }}</h3>
+        {{ $s.content }}
+      </div>
+    {{ end }}
+  </div>
+  <div class="pam-container pam-text-center">
+    <p><a href="https://calendly.com/benyin/30min?utm_source=Services&utm_medium=Website&utm_campaign=DefensivePlanning&utm_id=WebContent" target="_blank" class="pam-button">Schedule Consultation</a></p>
   </div>
 </div>

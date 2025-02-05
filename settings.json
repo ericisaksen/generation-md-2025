@@ -50,7 +50,7 @@
 					},
 					{
 						"title": "The H.E.R.O. Strategy™",
-						"url": "#"
+						"url": ".3.htm"
 					},
 					{
 						"title": "Organizations We Work With",
@@ -66,19 +66,36 @@
 			{
 				"sub_nav": [
 					{
-						"title": "Our Core Services",
-						"url": ".13.htm"
-					},
-					{
 						"title": "Independent Contractor Physicians",
-						"url": ".14.htm"
+						"url": "#"
 					},
 					{
 						"title": "Disability Insurance",
-						"url": ".15.htm"
+						"url": "#"
 					}
 				],
 				"title": "How We Help"
+			},
+			{
+				"sub_nav": [
+					{
+						"title": "Asset Protection & Defensive Planning",
+						"url": ".13.htm"
+					},
+					{
+						"title": "Financial Decision Making",
+						"url": ".14.htm"
+					},
+					{
+						"title": "Wealth Management & Optimization",
+						"url": ".15.htm"
+					},
+					{
+						"title": "Long-term Planning & Succession",
+						"url": ".20.htm"
+					}
+				],
+				"title": "Our Services"
 			},
 			{
 				"sub_nav": [
